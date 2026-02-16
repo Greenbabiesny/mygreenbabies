@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Green Babies</title>
+  <meta name="description" content="Boutique houseplants, expert plant care tips, and in-home plant services in NY & CT." />
+  <style>
+    :root{
+      --green-dark:#2f6b3f;
+      --green:#6fbf8a;
+      --green-soft:#eaf5ee;
+      --earth:#c47a4a;
+      --ink:#2a2a2a;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;color:var(--ink);line-height:1.6;background:#fff}
+    header{background:linear-gradient(180deg,var(--green-soft),#fff);padding:28px 20px}
+    nav{max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .brand{font-weight:800;letter-spacing:.3px;color:var(--green-dark)}
+    .nav a{margin-left:14px;color:var(--green-dark);text-decoration:none;font-weight:600}
+    .hero{max-width:1100px;margin:24px auto;padding:20px;display:grid;grid-template-columns:1.2fr .8fr;gap:24px}
+    .hero h1{font-size:42px;line-height:1.1;margin:0 0 10px}
+    .hero p{font-size:18px}
+    .cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:16px}
+    .btn{background:var(--green-dark);color:#fff;border:none;border-radius:10px;padding:12px 16px;font-weight:700;text-decoration:none}
+    .btn.alt{background:#fff;color:var(--green-dark);border:2px solid var(--green-dark)}
+    section{max-width:1100px;margin:40px auto;padding:0 20px}
+    h2{color:var(--green-dark);font-size:30px;margin-bottom:10px}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
+    .card{border:1px solid #e6e6e6;border-radius:16px;padding:16px}
+    .pill{display:inline-block;background:var(--green-soft);color:var(--green-dark);padding:4px 10px;border-radius:999px;font-size:12px;font-weight:700}
+    .shop-item img{width:100%;border-radius:12px;background:#f3f3f3;height:200px;object-fit:cover}
+    .price{font-weight:800;color:var(--green-dark)}
+    .checklist li{margin-left:18px}
+    footer{background:var(--green-soft);margin-top:60px}
+    footer .wrap{max-width:1100px;margin:0 auto;padding:24px 20px;display:grid;grid-template-columns:2fr 1fr;gap:20px}
+    small{opacity:.8}
+    @media (max-width:800px){.hero{grid-template-columns:1fr}.hero h1{font-size:34px}}
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="brand">My Green Babies</div>
+      <div class="nav">
+        <a href="#shop">Shop</a>
+        <a href="#care">Care Tips</a>
+        <a href="#services">House Calls</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+    <div class="hero">
+      <div>
+        <h1>Happy, healthy plants — and help when yours aren’t.</h1>
+        <p>Boutique houseplants grown with care, plus confident‑expert advice and in‑home plant services across NY & CT.</p>
+        <div class="cta">
+          <a class="btn" href="#shop">Shop Plants</a>
+          <a class="btn alt" href="#services">Book a House Call</a>
+        </div>
+      </div>
+      <div class="card">
+        <span class="pill">What we do</span>
+        <ul>
+          <li>5–10 carefully selected plants at a time</li>
+          <li>Local pickup or US shipping</li>
+          <li>Plant care tips you can trust</li>
+          <li>In‑home help within 25 miles of Katonah, NY</li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <section id="shop">
+    <!-- Stripe Buy buttons will be added per plant using Stripe Payment Links -->
+    <h2>Shop Plants</h2>
+    <p>Limited drops of healthy, well‑loved plants. Each listing includes simple care guidance.</p>
+    <div class="grid">
+      <div class="card shop-item">
+        <img alt="Plant photo" />
+        <h3>Plant Name</h3>
+        <p><strong>Light:</strong> Bright indirect • <strong>Water:</strong> When top inch is dry</p>
+        <p class="price">$45</p>
+        <a class="btn" href="#">Buy Now</a>
+      </div>
+      <div class="card shop-item">
+        <img alt="Plant photo" />
+        <h3>Plant Name</h3>
+        <p><strong>Light:</strong> Medium • <strong>Water:</strong> Weekly</p>
+        <p class="price">$35</p>
+        <a class="btn" href="#">Buy Now</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="care">
+    <h2>Plant Care Tips</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Why Leaves Turn Yellow</h3>
+        <p>Yellowing is usually about light or water balance — not doom. Start by checking soil moisture and light exposure.</p>
+        <ul class="checklist">
+          <li>Check drainage</li>
+          <li>Adjust light first</li>
+          <li>Water deeply, less often</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Watering Isn’t the Problem — Light Is</h3>
+        <p>Most indoor plants struggle from insufficient light. Move closer to a window before changing your watering routine.</p>
+        <ul class="checklist">
+          <li>Observe leaf size</li>
+          <li>Rotate weekly</li>
+          <li>Avoid dark corners</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="services">
+    <h2>House Calls & Plant Services</h2>
+    <p><strong>Service area:</strong> Within 25 miles of Katonah, NY (NY & CT). <strong>Travel fee:</strong> $50 per visit.</p>
+    <div class="grid">
+      <div class="card">
+        <h3>Plant Health Checks</h3>
+        <p>Diagnosis, treatment guidance, and clear next steps.</p>
+      </div>
+      <div class="card">
+        <h3>Pest & Problem Solving</h3>
+        <p>Identify issues and create a plan that actually works.</p>
+      </div>
+      <div class="card">
+        <h3>Vacation Care</h3>
+        <p>Short‑term plant sitting and prep before you travel.</p>
+      </div>
+    </div>
+    <p><em>Pricing is flexible and based on scope. Contact me with your location, number of plants, and photos if possible.</em></p>
+  </section>
+
+  <section id="about">
+    <h2>About My Green Babies</h2>
+    <p>My Green Babies is a boutique, home‑grown plant shop built around one goal: helping people keep plants alive and thriving. I believe good plant care should feel approachable, not intimidating — confident expertise with friendly, real‑world advice.</p>
+  </section>
+
+  <section id="newsletter">
+    <h2>Get Plant Drops & Care Tips</h2>
+    <p>Join the My Green Babies newsletter for new plant releases, care advice, and seasonal reminders.</p>
+    <form>
+      <input type="email" placeholder="Your email address" required style="padding:10px;border-radius:8px;border:1px solid #ccc;max-width:280px;width:100%" />
+      <button class="btn" type="submit">Subscribe</button>
+    </form>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:hello@mygreenbabies.com">hello@mygreenbabies.com</a></p>
+    <p>Questions? Unsure what your plant needs? Send a photo — I’m happy to take a look.</p>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      <div>
+        <strong>My Green Babies</strong><br />
+        <small>Boutique plants • Care tips • In‑home services</small>
+      </div>
+      <div><small>© <span id="y"></span> My Green Babies</small></div>
+    </div>
+  </footer>
+  <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+</body>
+</html>
